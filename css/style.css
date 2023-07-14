@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --ceniza: #F3F3F3;
+    --blanco: #FFFFFF;
+    --marron: #763317;
+    --rojo: #BD3728;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background-color: #F3F3F3;
+}
+
+/** header y footer   */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header,
+.footer {
+
+    color: #fff;
+    background: #222;
+    height: 7.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.ampersand {
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+
+}
+
+.header.derechaH {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.header ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+li {
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+
+.footer .izquierda {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+.footer .derechaF {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* logo piza y titulo para header y footer  */
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+}
+
+.logopiza {
+    width: 5.75rem;
+    height: 5rem;
+}
+
+
+
+h2 {
+    color: #FC200C;
+    padding-top: 1rem;
+
+}
+
+.blanco {
+    color: white;
+}
+
+.green {
+    color: #39B24A;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 1rem;
+    letter-spacing: 0.3rem;
+
+
+}
+
+.red {
+    color: #FC200C;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3rem;
+
+}
+
+/* fin logo */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F3F3;
+    flex: 0.7;
+    margin-bottom: 7rem;
+
+}
+
+.section {
+    margin: 2.19rem 0rem;
+    background-color: #fff;
+    width: 90%;
+    height: 21.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section div izq  */
+.izquierdaS {
+    background-image: url(../public/images/delivery.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.izquierdaS,
+.derechaS {
+    width: 50%;
+    height: 21.875rem;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.3125rem;
+    text-align: center;
+
+}
+
+/* section div derecho */
+.section .derechaPodioYTorre {
+    width: 100%;
+    height: 21.875rem;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.podioYpic {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.tituloPodio {
+    height: 20%;
+}
+
+.pizzasTop {
+    height: 80%;
+    width: 50%;
+    background: #FFF;
+
+}
+
+.tituloTop5 {
+    text-align: center;
+}
+
+.pizzasTop ol {
+    margin-top: 2rem;
+    margin-left: 6rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pizzasTop ol li{
+    text-align: justify;
+
+}
+
+
+.torre {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.torre img {
+    width: 8rem;
+}
+
+/***** mediaqueries  */
+
+@media only screen and (max-width: 758px) {
+/*header and footer*/
+    .header,
+    .footer {
+
+        height: 7.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+    }
+
+    .derechaH,
+    .izquierdaF {
+        display: none;
+    }
+
+
+    .textoLogo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem 0rem;
+    }
+
+/*main*/
+main{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    justify-content:space-between;
+    width: 100%;
+    height: 45rem;
+   
+}
+.izquierdaS, .derechaS{
+    width:100%;
+}
+.derechaS{
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+
+}
+.pizzasTop ol li{
+    text-align: justify;
+}
+}
+@media only screen and (max-width: 368px) {
+.torre{
+    display:none;
+  
+}
+.pizzasTop{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+}
+/********** hacer responsivo un sitio con rem */
+@media (max-width: 1400px) {
+    html {
+      font-size: 20px;
+    }
+  }
+  
+ /* tablets */
+  
+  @media (max-width: 996px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+ /* Celulares */
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 12px;
+    }
+  }
